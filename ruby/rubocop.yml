@@ -6,6 +6,7 @@ AllCops:
     - 'db/migrate/*'
     - 'db/schema.rb'
     - 'vendor/**/*'
+  NewCops: enable
 
 Naming/FileName:
   Exclude:
@@ -14,7 +15,10 @@ Naming/FileName:
 Style/ParenthesesAroundCondition:
   Enabled: false
 
-Style/TrailingCommaInLiteral:
+Style/TrailingCommaInArrayLiteral:
+  EnforcedStyleForMultiline: consistent_comma
+
+Style/TrailingCommaInHashLiteral:
   EnforcedStyleForMultiline: consistent_comma
 
 # Allow compact style for nested module/class definitions
