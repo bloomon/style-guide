@@ -6,5 +6,6 @@ ignore =
     W505  # ignored by default (doc line too long (82 > 79 characters))
 exclude =
     .pip,
+    __pypackages__,
     docker-compose,
     secrets
