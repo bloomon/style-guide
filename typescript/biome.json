@@ -23,6 +23,7 @@
 	"noExplicitAny": "off"
       },
       "style": {
+        "noNonNullAssertion": "off",
 	"recommended": true,
 	"noArguments": "off"
       }
