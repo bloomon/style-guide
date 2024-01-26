@@ -5,7 +5,8 @@ max-line-length = 88
 # [E203] disables "whitespace before ':'", as this is desired in some slices (and black manages this)
 # [W503] disables "line break before binary operator", preferred style (contrast W504)
 # [W505] disabled "doc line too long" (disabled by default)
-ignore = E203 W503 W505
+# [E704] disables "Multiple statements on one line (def)", allowing dummy function definitions inline
+ignore = E203 W503 W505 E704
 exclude =
     .pip,
     __pypackages__,
