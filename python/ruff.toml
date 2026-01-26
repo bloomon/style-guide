@@ -1,0 +1,51 @@
+# Common linting and formatting rules for all Python projects.
+line-length = 88
+indent-width = 4
+show-fixes = true
+unsafe-fixes = false
+extend-exclude = [
+    ".pip",
+    "__pypackages__",
+    "docker-compose",
+    "secrets",
+    ".git",
+    ".venv",
+    "__pycache__",
+]
+src = ["src", "tests"]
+
+[format]
+quote-style = "double"
+indent-style = "space"
+skip-magic-trailing-comma = false
+
+[lint]
+select = [
+    "B",   # flake8-bugbear
+    "BLE", # flake8-blind-except
+    "C90", # mccabe
+    "DJ",  # flake8-django
+    "E",   # pycodestyle
+    "ERA", # eradicate
+    "F",   # pyflakes
+    "I",   # isort
+    "PGH", # pygrep-hooks
+    "PIE", # flake8-pie
+    "PT",  # flake8-pytest-style
+    "Q",   # flake8-quotes
+    "T20", # flake8-print
+    "W",   # pycodestyle
+]
+ignore = [
+    "B008",  # no-function-call-in-argument-defaults
+    "B904",  # raise-without-from-inside-except
+    "B905",  # zip-without-explicit-strict
+    "DJ001", # django-nullable-model-string-field
+]
+unfixable = ["B", "ERA", "PIE", "PT"]
+
+[lint.flake8-builtins]
+ignorelist = ["id"]
+
+[lint.flake8-comprehensions]
+allow-dict-calls-with-keyword-arguments = true
