@@ -59,3 +59,6 @@ mark-parentheses = false
 parametrize-names-type = "csv"
 parametrize-values-type = "list"
 parametrize-values-row-type = "tuple"
+
+[lint.mccabe]
+max-complexity = 16
