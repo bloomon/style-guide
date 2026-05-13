@@ -42,6 +42,7 @@ ignore = [
     "B905",  # zip-without-explicit-strict
     "DJ001", # django-nullable-model-string-field
     "C901",  # McCabe complexity check
+    "E741",  # ambiguous-variable-name
 ]
 unfixable = ["B", "ERA", "PIE", "PT"]
 
